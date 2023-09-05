@@ -55,9 +55,9 @@
   "disableAnimations": false,
   "firstWindowPreference": "defaultProfile",
   "focusFollowMouse": false,
-  "initialCols": 88,
+  "initialCols": 135,
   "initialPosition": "250,100",
-  "initialRows": 28,
+  "initialRows": 40,
   "launchMode": "focus",
   "newTabMenu":
   [
@@ -71,15 +71,15 @@
     {
       "backgroundImage": null,
       "colorScheme": "Campbell",
-      "cursorShape": "filledBox",
+      "cursorShape": "bar",
       "experimental.retroTerminalEffect": false,
       "font":
       {
         "face": "CodeNewRoman Nerd Font Mono",
-        "size": 21.0,
+        "size": 12.0,
         "weight": "normal"
       },
-      "opacity": 65,
+      "opacity": 70,
       "padding": "0",
       "scrollbarState": "hidden",
       "useAcrylic": false
