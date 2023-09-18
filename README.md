@@ -1,5 +1,5 @@
 # my config
 
-- [x] windows terminal
-- [x] php
-- [x] zsh
+-  windows terminal
+-  php
+-  zsh
