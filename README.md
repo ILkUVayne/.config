@@ -1,5 +1,6 @@
 # my config
 
--  windows terminal
--  php
--  zsh
+- windows terminal
+- php
+- zsh
+- wox
