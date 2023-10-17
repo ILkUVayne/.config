@@ -1,0 +1,18 @@
+version: '3'
+services:
+  mysql:
+    restart: always
+    image: mysql
+    container_name: mysql-lable
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - /home/luoyang/dockerfile/mysql/datadir:/var/lib/mysql
+      - /home/luoyang/dockerfile/mysql/conf:/etc/mysql/conf.d
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+    ports:
+      # 使用宿主机的3306端口映射到容器的3306端口
+      # 宿主机：容器
+      - 3306:3306
