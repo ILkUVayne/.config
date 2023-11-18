@@ -1,6 +1,16 @@
-vim.o.tabstop = 4
-vim.bo.tabstop = 4
-vim.o.softtabstop = 4
-vim.o.shiftwidth=4
-vim.o.shiftround = true
-vim.o.number = true
+require("plugins.plugins-setup")
+require("core.options")
+require("core.keymaps")
+
+-- 插件
+require("plugins.lualine")
+require("plugins/nvim-tree")
+require("plugins/navigator")
+require("plugins/treesitter")
+require("plugins/lsp")
+require("plugins/cmp")
+require("plugins/comment")
+require("plugins/autopairs")
+require("plugins/bufferline")
+require("plugins/gitsigns")
+require("plugins/telescope")
