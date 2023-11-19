@@ -29,3 +29,17 @@ keymap.set({'n', 't'}, '<C-p>', '<CMD>NavigatorPrevious<CR>')
 -- 切换buffer
 keymap.set("n", "<A-l>", ":bnext<CR>")
 keymap.set("n", "<A-h>", ":bprevious<CR>")
+
+-- 快速保存
+keymap.set("n", '<leader>w', ':w<CR>')
+keymap.set("n", '<leader>q', ':q<CR>')
+keymap.set("n", '<leader>wq', ':wq<CR>')
+
+-- floaterm
+keymap.set("n", "<leader>to", ":FloatermNew<CR>")
+keymap.set("n", "<leader>t", ":FloatermToggle<CR>")
+keymap.set("n", "<leader>tn", ":FloatermNext<CR>")
+keymap.set("n", "<leader>tp", ":FloatermPrev<CR>")
+
+-- markdown preview 
+keymap.set("n", "<leader>mk", ":MarkdownPreviewToggle<CR>")
