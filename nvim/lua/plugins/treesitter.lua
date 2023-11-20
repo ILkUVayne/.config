@@ -5,6 +5,7 @@ require'nvim-treesitter.configs'.setup {
   },
    highlight = { enable = true },
    indent = { enable = true },
+   auto_install = false,
 -- 启用增量选择模块
 	-- incremental_selection = {
 	-- 	enable = true,

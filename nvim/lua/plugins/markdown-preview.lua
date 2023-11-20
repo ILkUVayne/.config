@@ -99,7 +99,7 @@ let g:mkdp_filetypes = ['markdown']
 
 " set default theme (dark or light)
 " By default the theme is defined according to the preferences of the system
-let g:mkdp_theme = 'dark'
+let g:mkdp_theme = 'light'
 
 " combine preview window
 " default: 0

@@ -20,11 +20,11 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "tr", ":NvimTreeToggle<CR>")
 
 -- navigator
-keymap.set({'n', 't'}, '<C-h>', '<CMD>NavigatorLeft<CR>')
-keymap.set({'n', 't'}, '<C-l>', '<CMD>NavigatorRight<CR>')
-keymap.set({'n', 't'}, '<C-k>', '<CMD>NavigatorUp<CR>')
-keymap.set({'n', 't'}, '<C-j>', '<CMD>NavigatorDown<CR>')
-keymap.set({'n', 't'}, '<C-p>', '<CMD>NavigatorPrevious<CR>')
+-- keymap.set({'n', 't'}, '<C-h>', '<CMD>NavigatorLeft<CR>')
+-- keymap.set({'n', 't'}, '<C-l>', '<CMD>NavigatorRight<CR>')
+-- keymap.set({'n', 't'}, '<C-k>', '<CMD>NavigatorUp<CR>')
+-- keymap.set({'n', 't'}, '<C-j>', '<CMD>NavigatorDown<CR>')
+-- keymap.set({'n', 't'}, '<C-p>', '<CMD>NavigatorPrevious<CR>')
 
 -- 切换buffer
 keymap.set("n", "<A-l>", ":bnext<CR>")

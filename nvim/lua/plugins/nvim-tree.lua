@@ -5,7 +5,7 @@ vim.g.loaded_netrwPlugin = 1
 require("nvim-tree").setup({
 -- project plugin 需要这样设置
   update_cwd = true,
-  update_focused_file = {
+  update_focused_file = {   
     enable = true,
     update_cwd = true,
   },

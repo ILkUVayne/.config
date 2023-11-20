@@ -49,7 +49,29 @@ require("mason-lspconfig").setup {
 }
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-
-require("lspconfig").lua_ls.setup {
+local util = require("lspconfig/util")
+local lspconfig = require("lspconfig")
+-- lua
+lspconfig.lua_ls.setup {
   capabilities = capabilities,
+}
+-- go
+lspconfig.gopls.setup {
+	capabilities = capabilities,
+	cmd = { "gopls" },
+	filetypes = { "go", "gomod", "gowork", "gotmpl" },
+	root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+	settings = {
+		gopls = {
+			-- auto import package
+			completeUnimported = true,
+			-- 添加占位符
+			usePlaceholders = true,
+			analyses = {
+				unusedparams = true,
+				fieldalignment = true,
+				unusedvariable = true,
+			},
+		},
+	},
 }

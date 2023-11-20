@@ -5,9 +5,12 @@ if not status then
 end
 
 db.setup({
+   
   theme = 'doom',
   config = {
+   
     header = {
+   
 -- [[                                                     ]],
 -- [[                                                     ]],
 -- [[██████╗ ███████╗████████╗████████╗███╗   ███╗██████╗ ]],
