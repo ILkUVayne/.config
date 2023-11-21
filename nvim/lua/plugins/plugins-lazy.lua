@@ -67,9 +67,31 @@ local plugins = {
 		"iamcco/markdown-preview.nvim",
 		build = function() vim.fn["mkdp#util#install"]() end,
 	},
+	-- go
 	{
 		"jose-elias-alvarez/null-ls.nvim",
 		ft = "go",
+	},
+	{"mfussenegger/nvim-dap"},
+	{
+		"leoluz/nvim-dap-go",
+		-- "dreamsofcode-io/nvim-dap-go",
+		ft = "go",
+		dependencies = {"mfussenegger/nvim-dap"}
+	},
+	{
+		"rcarriga/nvim-dap-ui",
+		dependencies = {"mfussenegger/nvim-dap"}
+	},
+	{
+		"olexsmir/gopher.nvim",
+		ft = "go",
+		config = function(_, opts)
+			require("gopher").setup(opts)
+		end,
+		build = function()
+			vim.cmd [[silent! GoInstallDeps]]
+		end,
 	},
 }
 
