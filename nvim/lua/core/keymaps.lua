@@ -40,6 +40,7 @@ keymap.set("n", "<leader>to", ":FloatermNew<CR>")
 keymap.set("n", "<leader>t", ":FloatermToggle<CR>")
 keymap.set("n", "<leader>tn", ":FloatermNext<CR>")
 keymap.set("n", "<leader>tp", ":FloatermPrev<CR>")
+keymap.set("n", "<leader>tl", ":FloatermNew lazygit<CR>")
 
 -- markdown preview 
 keymap.set("n", "<leader>mk", ":MarkdownPreviewToggle<CR>")
