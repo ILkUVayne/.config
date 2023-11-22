@@ -38,6 +38,7 @@ local plugins = {
 	{
 		"neovim/nvim-lspconfig"
 	},
+	{"onsails/lspkind.nvim"},
 	{"neovim/nvim-lspconfig"},
 	{"hrsh7th/cmp-nvim-lsp"},
 	{"hrsh7th/cmp-buffer"},
@@ -92,6 +93,18 @@ local plugins = {
 		build = function()
 			vim.cmd [[silent! GoInstallDeps]]
 		end,
+	},
+
+	{
+		'nvimdev/lspsaga.nvim',
+		event = 'LspAttach',
+		config = function()
+			require('lspsaga').setup({})
+		end,
+		dependencies = {
+			'nvim-treesitter/nvim-treesitter', -- optional
+			'nvim-tree/nvim-web-devicons',     -- optional
+		}
 	},
 }
 

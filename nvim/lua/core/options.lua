@@ -37,6 +37,8 @@ opt.smartcase = true
 
 -- 外观
 opt.termguicolors = true
-opt.signcolumn = "yes"
+-- opt.signcolumn = "yes"
+
+vim.wo.signcolumn = "yes"
 
 vim.cmd[[colorscheme tokyonight-moon]]
