@@ -14,7 +14,7 @@ map("n", "<leader>l", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('
 
 map("n", "<leader>nx", ":DapStepOver<CR>", { silent = true })
 map("n", "<leader>dus", ":lua require'dap.ui.widgets'.sidebar(require'dap.ui.widgets'.scopes).open()<CR>", { silent = true })
-map("n", "<leader>dt", ":lua require'dap'.terminate()<CR>", { silent = true })
+map("n", "<leader>dtm", ":lua require'dap'.terminate()<CR>", { silent = true })
 
 -- dap-ui key map
 map("n", "<C-A-u>", ":lua require'dapui'.toggle()<CR>", { silent = true})

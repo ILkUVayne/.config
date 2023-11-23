@@ -7,7 +7,7 @@ vim.diagnostic.config({
 local signs = {
 	Error = " ",
 	Warn = " ",
-	Hint = " ",
+	Hint = " ",
 	Info = " ",
 	imp_sign = '󰳛 ',
 }
