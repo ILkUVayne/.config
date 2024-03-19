@@ -77,7 +77,7 @@ Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
 
 ## 多版本切换
 
-将下面脚本添加至 /usr/local/bin/usephp 并添加可执行权限 sudo chmoe +x /usr/local/bin/usephp ， 用于便捷的快速切换 PHP 版本(编译多个版本再不同的路径，使用命令脚本切换即可)
+将下面脚本添加至 /usr/local/bin/usephp 并添加可执行权限 sudo chmod +x /usr/local/bin/usephp ， 用于便捷的快速切换 PHP 版本(编译多个版本再不同的路径，使用命令脚本切换即可)
 
 ~~~shell
 #!/bin/bash
