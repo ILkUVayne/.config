@@ -2,8 +2,8 @@ version: '3'
 services:
   mysql:
     restart: always
-    image: mysql
-    container_name: mysql-lable
+    image: mysql:8.0
+    container_name: mysql8
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     volumes:
       - /home/luoyang/dockerfile/mysql/datadir:/var/lib/mysql
