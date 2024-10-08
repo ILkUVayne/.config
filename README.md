@@ -1,7 +1,3 @@
 # my config
 
-- windows terminal
-- php
-- zsh
-- wox
-- nvim
+记录工作学习中的一些配置文件
